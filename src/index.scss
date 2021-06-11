@@ -1,0 +1,1021 @@
+
+
+
+
+
+main {
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* arcade stuff */
+h2.level {
+  font-size: 20px;
+}
+
+
+h2 {
+  
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 5px;
+  text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+  animation: blink 6s steps(4, start) infinite;
+
+}
+@-moz-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-o-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+
+.homeScreen {
+  
+  height: 301px;
+  width: 540px;
+  background: url("https://media2.giphy.com/media/hcv6pqfdGGMywFqKTE/source.gif?cid=790b7611c626b832d58ab1ecf5681978a649c884710cc1e1&rid=source.gif&ct=g");
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0%;
+ 
+  
+
+
+
+
+}
+
+/* arcade stuff */
+
+
+
+
+
+
+
+/* fighter cards */
+
+.cards {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.spacer {
+  height: 25px;
+}
+
+.card {
+  margin: 1rem;
+  background:  repeating-linear-gradient(to bottom, black, rgb(0, 0, 0) 2px, black 2px, black 4px);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card .image {
+  height: 225px;
+  position: relative;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+/* fighter cards */
+
+nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+/* button  */
+
+
+
+:root {
+  --backgroundColor: repeating-linear-gradient(to bottom, black, black 2px, black 1px, rgb(70, 70, 70) 5px);
+  --colorShadeA:rgb(156, 0, 0);
+ 
+  --colorShadeC: rgb(235, 0, 0);
+  --colorShadeD: rgb(156, 0, 0);
+  --colorShadeE: rgb(235, 0, 0);
+  --colorShadeW: rgb(255, 255, 255);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  
+          align-items: center;
+          justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: var(--backgroundColor);
+  height: 100%;
+  width: 100%;
+  background-image: url("https://i.pinimg.com/originals/7f/ae/cb/7faecb6cee8f08f09b48d0547f870495.gif");
+  object-fit: contain;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.5rem;
+    color:white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: inherit;
+margin-right: auto;
+margin-left: auto;
+
+}
+
+a.big-button {
+   padding: 1em 2em;
+   border: 2px solid var(--colorShadeA);
+  border-radius: 40em;
+  background: var(--colorShadeE);
+  transform-style: preserve-3d;
+   transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+a.big-button::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--colorShadeC);
+  border-radius: inherit;
+    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
+ transform: translate3d(0, 0.75em, -1em);
+     transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+
+a.big-button:hover {
+  background: var(--colorShadeD);
+  transform: translate(0, 0.375em);
+}
+
+a.big-button:hover::before {
+  transform: translate3d(0, 0.75em, -1em);
+}
+
+a.big-button:active {
+            transform: translate(0em, 0.75em);
+}
+
+a.big-button:active::before {
+  transform: translate3d(0, 0, -1em);
+  
+      box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+
+}
+
+
+/* button */
+
+div.mainpage {
+  
+  height: 300px;
+  width: 100%;
+  
+  
+}
+
+
+form{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+/* Training Room */
+//moves so far: 
+//walk: left/right & A/D
+//punch: c
+//kick: v 
+//heavy: b
+
+.heavy {
+  animation: heavy steps(13) 1s infinite;
+}
+
+@keyframes heavy {
+  from {background-position:0px -900px;}
+  to   {background-position:-4000px -900px;}
+}
+.kick {
+  animation: kick steps(13) 1s infinite;
+}
+@keyframes kick {
+  from {background-position: 0px 0px;}
+  to {background-position: -4000px 0px;}
+}
+
+#mark { 
+  width: 60px; height:60px; 
+  background-image:url('move1.png'); 
+  margin-top: 250px;
+  
+}
+
+
+.punch {
+  animation: punch steps(13) 1s infinite;
+
+}
+
+@keyframes punch { 
+  from{ background-position: 0px -300px;}
+  to { background-position: -4000px -300px;}
+  
+}
+
+.hurt {
+  animation: hurt steps(13) 1s infinite;
+
+}
+
+@keyframes hurt { 
+  from{ background-position: 0px -1200px;}
+  to { background-position: -4000px -1200px;}
+  
+}
+
+
+.box {
+  background-color: #20a6ab09;
+  margin: 0 auto;
+  width: 600px;
+  height: 400px;
+  position: relative;
+  
+  
+  overflow: hidden;
+}
+.box b {
+  display: block;
+  
+  border-radius: 50%;
+  width: 65px; height:65px; 
+  background-image:url('markfinal.png');
+  box-shadow: inset -5px -5px 5px rgba(0,0,0,.6), 15px 15px 2px rgba(0,0,0,.04);
+  position: absolute;
+  -webkit-animation: moveX 2s linear 0s infinite alternate, moveY 1s linear 0s infinite alternate;
+  -moz-animation: moveX 2s linear 0s infinite alternate, moveY 1s linear 0s infinite alternate;
+  -o-animation: moveX 2s linear 0s infinite alternate, moveY 1s linear 0s infinite alternate;
+  animation: moveX 2s linear 0s infinite alternate, moveY 1s linear 0s infinite alternate;
+}
+
+
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 280px; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 280px; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 280px; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 280px; }
+}
+
+
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 480px; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 480px; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 480px; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 480px; }
+}
+// #opp { 
+  // width: 65px; height:65px; 
+  // background-image:url('markfinal.png'); 
+ 
+// }
+
+// .punch { 
+//   animation: punch steps(7) 1s infinite; 
+// }
+// @keyframes punch {
+//   from { background-position:-455px 0px; }
+//   to { background-position:0px 0px; }
+// }
+
+#topRow {
+display: flex;
+flex-direction: row;
+
+width: 768px; height: 392px;
+justify-content: center;
+background-image: url("http://img110.xooimage.com/files/2/d/e/dr-4ccbd14.png");
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+#bottomRow {
+  display: flex;
+  flex-direction: row;
+  
+  width: 1000px; height: 330px;
+  justify-content: center;
+  margin-bottom: 100px;
+  }
+
+
+
+
+
+
+.stats {
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin: 140px;
+  width: 200px;
+ align-items: baseline;
+}
+.healthLabel {
+  font: 18pt Ariel;
+  font-weight: bold;
+}
+
+.hpBorder {
+  width: 350px;
+  height: 30px;
+  border: 3px solid;
+  border-color: black;
+}
+
+.hpBar {
+  width: 350px; 
+  height: 30px;
+  background-color: green;
+}
+
+
+// @mixin animation($params) { 
+//   -webkit-animation:$params;
+//   -moz-animation:$params;
+//   -ms-animation:$params;
+//   animation:$params;
+// }
+// @mixin keyframes($name) { 
+//   @-webkit-keyframes $name { @content }
+//   @-moz-keyframes    $name { @content }
+//   @-ms-keyframes     $name { @content }
+//   @keyframes         $name { @content }
+// }
+
+// $spriteWidth:65px;
+// $spriteHeight:65px;
+
+// @mixin anim($animName, $steps, $animNbr, $animParams){
+//   .#{$animName} { 
+//       @content;
+//       @include animation($animName steps($steps) $animParams); 
+//   }
+//   @include keyframes($animName) {
+//       from { background-position:0px (-$spriteHeight * ($animNbr - 1)); }
+//       to { background-position:-($spriteWidth * $steps) (-$spriteHeight * ($animNbr - 1)); }
+//   }
+// }
+
+// $spriteWidth:65px;
+// $spriteHeight:65px;
+
+/* punch */
+// @include anim($animName:punch, $steps:7, $animNbr:1, $animParams:1s infinite);
+
+
+
+
+
+/* Training Room */
+
+
+
+/* Drop down button  */
+button.delete {
+  margin-bottom: 50px;
+}
+
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.5rem;
+    color:white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: inherit;
+margin-right: auto;
+margin-left: auto;
+
+}
+
+button {
+  padding: 1em 2em;
+  border: 2px solid var(--colorShadeA);
+ border-radius: 1em;
+ background: var(--colorShadeE);
+transform-style: preserve-3d;
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+
+}
+
+button::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--colorShadeC);
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
+  transform: translate3d(0, 0.75em, -1em);
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+
+button:hover {
+  background: var(--colorShadeD);
+  transform: translate(0, 0.175em);
+}
+
+button:hover::before {
+  transform: translate3d(0, 0.75em, -1em);
+}
+
+button:active {
+  transform: translate(0em, 0.75em);
+}
+
+button:active::before {
+  transform: translate3d(0, 0, -1em);
+  
+  box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+  
+} 
+
+/* Drop down button  */
+
+
+
+/* login labels */
+
+label {
+  
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 90px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 5px;
+  text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+  
+}
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: red;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f100;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: gold;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #20a5f9;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: black;}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.fightersDiv {
+  background-color: var(--backgroundColor);
+}
+
+
+/* edit fighters button */
+
+
+select {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.5rem;
+    color:gold;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: inherit;
+margin-right: auto;
+margin-left: auto;
+
+}
+
+select {
+  
+  border: 2px solid var(--colorShadeA);
+ border-radius: 1em;
+ background: #20a5f9;
+transform-style: preserve-3d;
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+select::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--colorShadeC);
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
+  transform: translate3d(0, 0.75em, -1em);
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+
+select:hover {
+  background: black;
+  transform: translate(0, 0.375em);
+}
+
+select:hover::before {
+  transform: translate3d(0, 0.75em, -1em);
+}
+
+select:active {
+  transform: translate(0em, 0.75em);
+}
+
+select:active::before {
+  transform: translate3d(0, 0, -1em);
+  
+  box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+  
+} 
+
+// snake game 
+
+
+
+canvas {
+  border: 2px solid rgb(151, 149, 149);
+}
+// snake game 
+
+
+
+// block game 
+
+body {
+  background-color: black;
+  font-family: 'roboto', sans-serif;
+  font-weight: 100;
+}
+.player {
+  position: absolute;
+  height: 95vh;
+  top: 5vh;
+  &:nth-child(1) {
+    display: inline-block;
+    left: 1rem;
+    p {
+      float: left;
+    }
+    .healthAmount {
+      right: -75px;
+    }
+    .damageAmount {
+      left: 0px;
+    }
+  }
+  &:nth-child(2) {
+    right: 1rem;
+    display: inline-block;
+    p {
+      float: right;
+    }
+    .healthAmount {
+      left: -75px
+    }
+    .damageAmount {
+      right: 0px;
+    }
+  }
+}
+.characterWrapper {
+  width: 1400px;
+  height: 480px;
+  
+  top: 0;
+  left: 0;
+  justify-content: center;
+  
+ 
+}
+$width: 200px;
+.character {
+  position:absolute;
+  width: $width;
+  height: 80%;
+  bottom: 0;
+  transition: left .5s ease;
+  width: 250px; height:250px; 
+  margin-bottom: 200px;
+  transform: translate3d(0, 0.75em, -1em);
+}
+.punch { 
+  animation: punch steps(6) .5s infinite; 
+  
+}
+@keyframes punch {
+  from { background-position:0px  -0px; }
+  to { background-position:-1500px -0px; }
+}
+.kick { 
+  animation: kick steps(6) .5s infinite; 
+  
+}
+@keyframes kick {
+  from { background-position:0px  -270px; }
+  to { background-position:-1500px -270px; }
+}
+
+.walk { 
+  animation: walk steps(6) .5s infinite; 
+  
+}
+@keyframes walk {
+  from { background-position:0px  -520px; }
+  to { background-position:-1500px -520px; }
+}
+
+.heavy { 
+  animation: heavy steps(6) .5s infinite; 
+  
+}
+@keyframes heavy {
+  from { background-position:0px  -775px; }
+  to { background-position:-1500px -775px; }
+}
+
+
+#character1{
+  background-image:url('halfThat copy.png');
+
+  left: calc(10%);
+  
+}
+#character2{
+  background-image: url('Omniman.png');
+  left: calc(90% - #{$width});
+  transform: scaleX(-1);
+}
+.healthAmount {
+  font-size: 24px;
+  text-align: center;
+  line-height: 52px;
+  color: rgb(255, 255, 119);
+  font-weight: bold;
+  position: absolute;
+  top: -2.5vh;
+  height: 8vh;
+  width: 8vh;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.lethalHit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+.healthBar {
+  width: 300px;
+  height: 10px;
+  background-color: red;
+  border: 1px solid #444;
+  position: relative;
+  div:not(.healthamount) {
+   position: absolute;   
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 119);
+    transition: width .5s ease;
+  }
+}
+.damageAmount {
+  top: 60px;
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    animation: fadeOut 1s ease;
+    opacity: 0;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      top: 30px;
+    }
+    100% {
+      opacity: 0;
+      top: -30px;
+    }
+  }
+  p {
+    margin: 0;
+    font-size: 30px;
+    color: yellow;
+    text-shadow: 0 0 10px red;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  span {
+    display: block;
+    font-size: 10px;
+    text-align: center;
+  }
+}
+#actionItems {
+  padding-top: 2rem;
+}
+
+#replay {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 85%;
+  top: 90%;
+}
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 2rem;
+  box-sizing: border-box;
+  height: 22%;
+  width: 100%;
+  background-color:black ;
+  border: 15px double  var(--colorShadeW);
+  
+}
+
+.homeheader {
+  background-color: #20a5f9;
+  
+  width: 100%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+   background-image: url("https://i.imgur.com/akddLLj.gif?noredirect");
+   border: 15px solid  white;
+  
+
+}
+nav {
+  border: 20px solid white ;
+  
+}
+
+.homeheader2 {
+  
+  //background-color: black;
+  
+  width: 100%;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+   background-image: url("https://pbs.twimg.com/media/Ezn_y_vVUAI_qRX.jpg");
+   border: 10px solid  rgb(255, 255, 255);
+  
+}
+
+header {
+  
+  background-color: black;
+  border: 15px double  var(--colorShadeW);
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  display: flex;
+  position: absolute;
+}
+#firstPlayerControls, #secondPlayerControls {
+  & > span {
+    color: #fcd000 ;
+    font-size: 2rem;
+    margin: 0 .5rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    & > span:not(.actionType) {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, .25);
+      opacity: 0;
+      transition: opacity .15s ease;
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}
+#firstPlayerControls {
+  float: left;
+}
+#secondPlayerControls {
+  float: right;
+}
+// .character {
+//   position: absolute;
+//   height: 80%;
+//   width: 200px;
+//   bottom: 0;
+//   left: 0;
+//   background-image: url(https://googledrive.com/host/0BxcCeT5b320cR2ZyT1BILV9QVTg/streetFighterSpritePlayerOne.png);
+//   background-size: 600% 100%;
+//   background-position: 0 0;
+// }
+.actionType {
+  font-size: 10px;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: green;
+}
+//////////////
+// background
+//////////////
+#set {
+  z-index: -1;
+  background-image: url(http://gdurl.com/DeIg);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center bottom;
+}
+
+#menu li{
+  list-style-type: none;
+}
+
+// block game
+
+
+// arcade screen
+
+// arcade screen
+
+
