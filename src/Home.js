@@ -11,18 +11,20 @@ function Home({ user }) {
   return (
       
     <div class="mainpage">
-      <div class="homeheader"></div>
+      
 
      
 
       <nav>
-        <h2 class="home"> Welcome {user ? user.name : null} to THE INVINCIBLE GAME!</h2>
+        <h2 class="home"> Welcome {user ? user.name : null} to THE LOKI CAGE FIGHTING GAME!</h2>
         
         <div class="homeScreen"> </div>
         {/* <button class="big-button">fighters</button> */}
         <ul></ul>
-        <div class="homeheader2">
+        
        <div class="spacer"></div>
+        <div class="joystick">
+
         <NavLink class="big-button" to="/login">
           Login
         </NavLink>
@@ -48,6 +50,7 @@ function Home({ user }) {
         </NavLink>
 
 
+        
         </div>
       </nav>
        

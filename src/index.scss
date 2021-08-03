@@ -26,7 +26,7 @@ h2 {
   bottom: 0;
   right: 0;
   height: 50px;
-  color: #fff;
+  color: rgb(0, 85, 0);
   width: 100%;
   text-align: center;
   margin: auto;
@@ -35,7 +35,7 @@ h2 {
   letter-spacing: 5px;
   text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
   animation: blink 6s steps(4, start) infinite;
-
+  
 }
 @-moz-keyframes blink {
   to {
@@ -64,7 +64,7 @@ h2 {
   
   height: 301px;
   width: 540px;
-  background: url("https://media2.giphy.com/media/hcv6pqfdGGMywFqKTE/source.gif?cid=790b7611c626b832d58ab1ecf5681978a649c884710cc1e1&rid=source.gif&ct=g");
+  background: url("https://i.imgur.com/oUMTTo6.gif");
   margin-right: auto;
   margin-left: auto;
   opacity: 0%;
@@ -99,7 +99,7 @@ h2 {
 
 .card {
   margin: 1rem;
-  background:  repeating-linear-gradient(to bottom, black, rgb(0, 0, 0) 2px, black 2px, black 4px);
+  
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 100%;
@@ -119,8 +119,8 @@ h2 {
 /* fighter cards */
 
 nav {
-  margin-left: auto;
-  margin-right: auto;
+  
+  width: 1532px;
 }
 
 html {
@@ -128,7 +128,10 @@ html {
   margin-right: auto;
 }
 
+.joystick {
+margin-top: 300px;
 
+}
 
 
 /* button  */
@@ -137,12 +140,12 @@ html {
 
 :root {
   --backgroundColor: repeating-linear-gradient(to bottom, black, black 2px, black 1px, rgb(70, 70, 70) 5px);
-  --colorShadeA:rgb(156, 0, 0);
+  --colorShadeA:gold;
  
-  --colorShadeC: rgb(235, 0, 0);
-  --colorShadeD: rgb(156, 0, 0);
-  --colorShadeE: rgb(235, 0, 0);
-  --colorShadeW: rgb(255, 255, 255);
+  --colorShadeC: rgb(16, 80, 0);
+  --colorShadeD: gold;
+  --colorShadeE: rgb(21, 104, 0);
+  --colorShadeW: rgb(26, 129, 0);
 }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
@@ -161,10 +164,10 @@ body {
           justify-content: center;
   margin: 0;
   min-height: 100vh;
-  background: var(--backgroundColor);
+  background: black;
   height: 100%;
   width: 100%;
-  background-image: url("https://i.pinimg.com/originals/7f/ae/cb/7faecb6cee8f08f09b48d0547f870495.gif");
+  
   object-fit: contain;
 }
 
@@ -614,7 +617,7 @@ h3 {
 }
 
 .fightersDiv {
-  background-color: var(--backgroundColor);
+  background-color: black;
 }
 
 
@@ -699,7 +702,7 @@ canvas {
 // block game 
 
 body {
-  background-color: black;
+  background-image: url("https://static4.depositphotos.com/1006137/284/i/950/depositphotos_2844554-stock-photo-ancient-background.jpg");
   font-family: 'roboto', sans-serif;
   font-weight: 100;
 }
@@ -735,12 +738,14 @@ body {
   }
 }
 .characterWrapper {
-  width: 1400px;
-  height: 480px;
-  
-  top: 0;
-  left: 0;
+  height: 384px;
+  width: 1024px;
+  background-image: url("https://i.imgur.com/OACf5cL.gif");
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
+  
   
  
 }
@@ -751,12 +756,12 @@ $width: 200px;
   height: 80%;
   bottom: 0;
   transition: left .5s ease;
-  width: 250px; height:250px; 
+  width: 250px; height:280px; 
   margin-bottom: 200px;
   transform: translate3d(0, 0.75em, -1em);
 }
 .punch { 
-  animation: punch steps(6) .5s infinite; 
+  animation: punch steps(6) .75s infinite; 
   
 }
 @keyframes punch {
@@ -773,12 +778,12 @@ $width: 200px;
 }
 
 .walk { 
-  animation: walk steps(6) .5s infinite; 
+  animation: walk steps(3) .5s infinite; 
   
 }
 @keyframes walk {
   from { background-position:0px  -520px; }
-  to { background-position:-1500px -520px; }
+  to { background-position:-750px -520px; }
 }
 
 .heavy { 
@@ -792,14 +797,14 @@ $width: 200px;
 
 
 #character1{
-  background-image:url('halfThat copy.png');
+  background-image:url('Jaxish.png');
 
-  left: calc(10%);
+  left: calc(13%);
   
 }
 #character2{
-  background-image: url('Omniman.png');
-  left: calc(90% - #{$width});
+  background-image: url('loki.png');
+  left: calc(80% - #{$width});
   transform: scaleX(-1);
 }
 .healthAmount {
@@ -894,8 +899,8 @@ $width: 200px;
   height: 22%;
   width: 100%;
   background-color:black ;
-  border: 15px double  var(--colorShadeW);
   
+  background-image: url("https://static4.depositphotos.com/1006137/284/i/950/depositphotos_2844554-stock-photo-ancient-background.jpg")
 }
 
 .homeheader {
@@ -910,10 +915,7 @@ $width: 200px;
   
 
 }
-nav {
-  border: 20px solid white ;
-  
-}
+
 
 .homeheader2 {
   
@@ -930,10 +932,10 @@ nav {
 
 header {
   
-  background-color: black;
-  border: 15px double  var(--colorShadeW);
+  background-image: url("https://static4.depositphotos.com/1006137/284/i/950/depositphotos_2844554-stock-photo-ancient-background.jpg");
+  
   width: 100%;
-  height: 200px;
+  height: 300px;
   padding: 1rem;
   display: flex;
   position: absolute;

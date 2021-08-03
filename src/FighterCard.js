@@ -179,7 +179,7 @@ function FighterCard({ user, fighter: { id, image, alias, race, hp, specialty, s
                 character1.addClass('punch');
                 setTimeout(function(){
                   character1.removeClass('punch');
-                }, 500);
+                }, 750);
                 break;
 
             }
@@ -300,7 +300,7 @@ function FighterCard({ user, fighter: { id, image, alias, race, hp, specialty, s
       <div class="lethalHit"></div>
     </div>
     <div class="player">
-      <h2>Player 2</h2>
+      <h2>Loki</h2>
       <h3>.</h3>
       <div class="healthAmount">1000</div>
       <div class="damageAmount"></div>
